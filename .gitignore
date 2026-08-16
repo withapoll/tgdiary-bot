@@ -1,0 +1,6 @@
+config.json
+data/
+__pycache__/
+*.pyc
+tgapi.html
+data_test/
