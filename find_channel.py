@@ -4,7 +4,7 @@
 
 Запуск:
     python find_channel.py                 # берёт токен из config.json
-    python find_channel.py <8811287008:AAEH2XpfMDAbjiJtjfAnWwfDkkA4Qv2EpI0>     # или передай явно
+    python find_channel.py <>     # или передай явно
 
 Порядок действий:
   1. Добавь бота в АДМИНЫ приватного канала.
@@ -47,7 +47,7 @@ def main():
         token = json.loads(CFG.read_text(encoding="utf-8")).get("bot_token", "")
 
     if not token or token.startswith("PASTE"):
-        print("Укажи токен: python find_channel.py <8811287008:AAEH2XpfMDAbjiJtjfAnWwfDkkA4Qv2EpI0>")
+        print("Укажи токен: python find_channel.py <>")
         print("или заполни bot_token в config.json")
         sys.exit(1)
 
